@@ -1,0 +1,97 @@
+/* Header Styles */
+#logo{
+    height: 150px;
+    width: 150px;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+    padding: 0 20px;
+}
+
+.navbar li a {
+   text-decoration: none;
+    font-weight: 600; 
+    font-size: 16px;
+    color: #333;
+    transition: color 0.4s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    bottom: -5px;
+    left: 20px;
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #007bff;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    width: 50%;
+}
+/* HOME  Styles */
+#Value {
+    background-image: url('img/Value-placeholder.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+#Value button {
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    border: none;
+    border-radius: 999px;
+    padding: 14px 32px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+#Value button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(59, 130, 246, 0.35);
+    filter: brightness(1.05);
+}
+
+#Value button:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+}
