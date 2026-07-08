@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Construction Equipment Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+    
+    <section id="header">
+        <img id="logo" src="img/logo-placeholder.png" alt="Logo">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shopping_cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </section>
+
+    <section id="products-header">
+        <div class="products-header-content">
+            <h1>Construction Equipment</h1>
+            <p>Find the right tools for your project</p>
+        </div>
+    </section>
+
+    <section id="products-container">
+        <div class="products-sidebar">
+            <div class="filter-box">
+                <h3>Filter Products</h3>
+                
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <label><input type="checkbox"> Excavators</label>
+                    <label><input type="checkbox"> Bulldozers</label>
+                    <label><input type="checkbox"> Cranes</label>
+                    <label><input type="checkbox"> Loaders</label>
+                    <label><input type="checkbox"> Drills</label>
+                    <label><input type="checkbox"> Compactors</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <label><input type="radio" name="price"> Under $5,000</label>
+                    <label><input type="radio" name="price"> $5,000 - $15,000</label>
+                    <label><input type="radio" name="price"> $15,000 - $50,000</label>
+                    <label><input type="radio" name="price"> $50,000+</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Condition</h4>
+                    <label><input type="checkbox"> New</label>
+                    <label><input type="checkbox"> Used</label>
+                    <label><input type="checkbox"> Refurbished</label>
+                </div>
+
+                <button class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+
+        <div class="products-main">
+            <div class="products-top">
+                <div class="sort-section">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Rated</option>
+                        <option>Most Popular</option>
+                    </select>
+                </div>
+                <div class="results-count">
+                    <p><span id="result-count">48</span> results</p>
+                </div>
+            </div>
+
+            <div class="products-grid-large">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="CAT Excavator">
+                        <span class="discount-badge">-15%</span>
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>CAT 320 Hydraulic Excavator</h3>
+                        <p class="product-description">20-ton hydraulic excavator with advanced precision</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(156 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$45,000</span>
+                            <span class="original-price">$52,941</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Bulldozer">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Komatsu D155 Bulldozer</h3>
+                        <p class="product-description">High-performance bulldozer for heavy earth moving</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(289 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$75,000</span>
+                            <span class="original-price">$93,750</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Wheel Loader">
+                        <span class="discount-badge">-10%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Volvo L220H Wheel Loader</h3>
+                        <p class="product-description">Heavy-duty wheel loader with superior efficiency</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(201 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$38,500</span>
+                            <span class="original-price">$42,777</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Mobile Crane">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Liebherr LTM 1200 Mobile Crane</h3>
+                        <p class="product-description">600-ton mobile crane for heavy lifting operations</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(342 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$125,000</span>
+                            <span class="original-price">$125,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Jackhammer">
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Atlas Copco Jackhammer</h3>
+                        <p class="product-description">Pneumatic jackhammer for breaking and drilling</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(567 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$2,250</span>
+                            <span class="original-price">$3,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Compactor">
+                        <span class="discount-badge">-12%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Caterpillar CS-56 Compactor</h3>
+                        <p class="product-description">Vibratory soil compactor for road construction</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(423 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$18,700</span>
+                            <span class="original-price">$21,250</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Telehandler">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>JCB 3-Stage Telehandler</h3>
+                        <p class="product-description">Versatile telescopic handler for material handling</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(298 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$28,500</span>
+                            <span class="original-price">$28,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Concrete Mixer">
+                        <span class="discount-badge">-18%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Imer Concrete Mixer</h3>
+                        <p class="product-description">750-liter portable concrete mixing machine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(612 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$3,690</span>
+                            <span class="original-price">$4,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Power Drill">
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hilti Heavy Duty Drill</h3>
+                        <p class="product-description">Professional-grade electric rotary hammer drill</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(891 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$1,750</span>
+                            <span class="original-price">$2,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Air Compressor">
+                        <span class="discount-badge">-8%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Atlas Copco Air Compressor</h3>
+                        <p class="product-description">Diesel-powered portable air compressor</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(734 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$11,500</span>
+                            <span class="original-price">$12,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Scaffolding">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aluminum Scaffolding System</h3>
+                        <p class="product-description">Modular aluminum scaffolding for safe working heights</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(445 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$4,200</span>
+                            <span class="original-price">$4,200</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Generator">
+                        <span class="discount-badge">-22%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cummins Diesel Generator 50kW</h3>
+                        <p class="product-description">Industrial diesel generator for continuous power</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(523 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$16,400</span>
+                            <span class="original-price">$21,025</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="9500" data-rating="4.5" data-popularity="780" data-date="2026-01-15">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Breaker">
+                        <span class="discount-badge">-14%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bosch Hydraulic Breaker</h3>
+                        <p class="product-description">Heavy-duty hydraulic breaker for demolition</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(780 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$9,500</span>
+                            <span class="original-price">$11,047</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="7200" data-rating="4" data-popularity="650" data-date="2026-01-10">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Vibratory Plate">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wacker Neuson Vibratory Plate</h3>
+                        <p class="product-description">Lightweight vibratory plate compactor for soil</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(650 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$7,200</span>
+                            <span class="original-price">$8,090</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="32500" data-rating="5" data-popularity="950" data-date="2026-01-05">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Mini Excavator">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kubota U35 Mini Excavator</h3>
+                        <p class="product-description">Compact mini excavator for tight spaces</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(950 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$32,500</span>
+                            <span class="original-price">$32,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1400" data-rating="4.5" data-popularity="1200" data-date="2026-01-20">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Circular Saw">
+                        <span class="discount-badge">-19%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>DeWalt Heavy Duty Circular Saw</h3>
+                        <p class="product-description">Professional circular saw for cutting steel</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(1200 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$1,400</span>
+                            <span class="original-price">$1,728</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="52000" data-rating="4" data-popularity="520" data-date="2025-12-28">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Backhoe">
+                        <span class="discount-badge">-17%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Case 580 Backhoe Loader</h3>
+                        <p class="product-description">Versatile backhoe loader for digging</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(520 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$52,000</span>
+                            <span class="original-price">$62,650</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="6800" data-rating="4.5" data-popularity="890" data-date="2026-01-18">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Grinder">
+                        <span class="discount-badge">-16%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Makita Professional Angle Grinder</h3>
+                        <p class="product-description">Heavy-duty angle grinder</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(890 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$6,800</span>
+                            <span class="original-price">$8,095</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="19500" data-rating="5" data-popularity="1100" data-date="2026-01-22">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Laser">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trimble Laser Level System</h3>
+                        <p class="product-description">Precision laser leveling</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1100 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$19,500</span>
+                            <span class="original-price">$19,500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="4500" data-rating="4" data-popularity="720" data-date="2026-01-12">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Washer">
+                        <span class="discount-badge">-13%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Karcher Power Washer</h3>
+                        <p class="product-description">High-pressure water cleaning</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(720 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$4,500</span>
+                            <span class="original-price">$5,172</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="14200" data-rating="4.5" data-popularity="680" data-date="2026-01-08">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Driver">
+                        <span class="discount-badge">-9%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Stuewe Post Driver</h3>
+                        <p class="product-description">Pneumatic post and fence driver</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(680 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$14,200</span>
+                            <span class="original-price">$15,604</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="5500" data-rating="5" data-popularity="1050" data-date="2026-01-19">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Gun">
+                        <span class="discount-badge">-21%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hitachi Nail Gun</h3>
+                        <p class="product-description">Professional pneumatic framing</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1050 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$5,500</span>
+                            <span class="original-price">$6,962</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="68000" data-rating="4.5" data-popularity="410" data-date="2025-12-20">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Roller">
+                        <span class="discount-badge">-7%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dynapac Asphalt Roller</h3>
+                        <p class="product-description">Vibratory compaction roller</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(410 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$68,000</span>
+                            <span class="original-price">$73,118</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="3200" data-rating="4" data-popularity="940" data-date="2026-01-21">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Saw">
+                        <span class="discount-badge">-24%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Festool Wet Tile Saw</h3>
+                        <p class="product-description">Precision wet cutting</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(940 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$3,200</span>
+                            <span class="original-price">$4,210</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="85000" data-rating="5" data-popularity="550" data-date="2026-01-02">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Lift">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>JLG Telescopic Boom Lift</h3>
+                        <p class="product-description">60-foot boom lift</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(550 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$85,000</span>
+                            <span class="original-price">$85,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="2800" data-rating="4.5" data-popularity="1320" data-date="2026-01-17">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Drill">
+                        <span class="discount-badge">-26%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ryobi Impact Drill</h3>
+                        <p class="product-description">Cordless impact drill</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(1320 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$2,800</span>
+                            <span class="original-price">$3,783</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="11800" data-rating="4" data-popularity="580" data-date="2025-12-25">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Compactor">
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>MBW Plate Compactor</h3>
+                        <p class="product-description">Walk-behind compactor</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(580 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$11,800</span>
+                            <span class="original-price">$13,882</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="42000" data-rating="5" data-popularity="840" data-date="2026-01-11">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Loader">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Volvo Articulated Loader</h3>
+                        <p class="product-description">Compact loader system</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(840 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$42,000</span>
+                            <span class="original-price">$42,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="8900" data-rating="4" data-popularity="710" data-date="2026-01-14">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Saw2">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Metabo Chop Saw</h3>
+                        <p class="product-description">Metal cutting saw</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(710 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$8,900</span>
+                            <span class="original-price">$11,125</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="6400" data-rating="4.5" data-popularity="920" data-date="2026-01-16">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Drill2">
+                        <span class="discount-badge">-6%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chicago Air Drill</h3>
+                        <p class="product-description">Pneumatic industrial drill</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(920 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$6,400</span>
+                            <span class="original-price">$6,808</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="95000" data-rating="4" data-popularity="480" data-date="2025-12-30">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Bobcat">
+                        <span class="discount-badge">-5%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bobcat Skid Loader</h3>
+                        <p class="product-description">Compact skid loader</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(480 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$95,000</span>
+                            <span class="original-price">$100,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="2300" data-rating="5" data-popularity="1450" data-date="2026-01-23">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Sander">
+                        <span class="discount-badge">-28%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bosch Orbital Sander</h3>
+                        <p class="product-description">Orbital sanding machine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1450 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$2,300</span>
+                            <span class="original-price">$3,194</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="55000" data-rating="4.5" data-popularity="490" data-date="2025-12-22">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Trencher">
+                        <span class="discount-badge">-4%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ditch Witch Trencher</h3>
+                        <p class="product-description">Chain trencher machine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(490 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$55,000</span>
+                            <span class="original-price">$57,291</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="3800" data-rating="4" data-popularity="1180" data-date="2026-01-13">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Welder">
+                        <span class="discount-badge">-23%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Köco Stud Welding System</h3>
+                        <p class="product-description">Stud welding machine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1180 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$3,800</span>
+                            <span class="original-price">$4,935</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="78000" data-rating="5" data-popularity="620" data-date="2026-01-06">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Pile">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Giken Pile Driver</h3>
+                        <p class="product-description">Pneumatic pile driver</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(620 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$78,000</span>
+                            <span class="original-price">$78,000</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1900" data-rating="4.5" data-popularity="1280" data-date="2026-01-09">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Screw">
+                        <span class="discount-badge">-31%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Atlas Pneumatic Screwdriver</h3>
+                        <p class="product-description">Power screwdriver</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(1280 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$1,900</span>
+                            <span class="original-price">$2,754</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="35500" data-rating="4" data-popularity="650" data-date="2025-12-31">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Forks">
+                        <span class="discount-badge">-10%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Standard Forks Attachment</h3>
+                        <p class="product-description">Universal pallet fork</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(650 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$35,500</span>
+                            <span class="original-price">$39,444</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="4100" data-rating="4.5" data-popularity="870" data-date="2026-01-24">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Sprayer">
+                        <span class="discount-badge">-12%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wagner Power Sprayer</h3>
+                        <p class="product-description">Industrial paint spraying system</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(870 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$4,100</span>
+                            <span class="original-price">$4,659</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="23400" data-rating="4.5" data-popularity="510" data-date="2026-01-03">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Paver">
+                        <span class="discount-badge">-18%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Volvo Asphalt Paver</h3>
+                        <p class="product-description">Precision asphalt laying</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(510 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$23,400</span>
+                            <span class="original-price">$28,536</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="9200" data-rating="5" data-popularity="1350" data-date="2026-01-07">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Sanders">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Festool Multi Sanders</h3>
+                        <p class="product-description">Rotary and orbital sanding</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1350 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$9,200</span>
+                            <span class="original-price">$9,200</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="17600" data-rating="4" data-popularity="730" data-date="2026-01-14">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Concrete">
+                        <span class="discount-badge">-22%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sullair Concrete Pump</h3>
+                        <p class="product-description">Portable concrete pumping</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(730 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$17,600</span>
+                            <span class="original-price">$22,564</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="5900" data-rating="4.5" data-popularity="1110" data-date="2026-01-19">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Splitter">
+                        <span class="discount-badge">-3%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Makita Log Splitter</h3>
+                        <p class="product-description">Hydraulic log splitting</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(1110 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$5,900</span>
+                            <span class="original-price">$6,082</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="31200" data-rating="5" data-popularity="420" data-date="2025-12-29">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Sweeper">
+                        <span class="discount-badge">-8%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bobcat Sweeper Attachment</h3>
+                        <p class="product-description">Area sweeping tool</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(420 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$31,200</span>
+                            <span class="original-price">$33,913</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="2650" data-rating="4" data-popularity="995" data-date="2026-01-18">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Jigsaw">
+                        <span class="discount-badge">-29%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bosch Heavy Duty Jigsaw</h3>
+                        <p class="product-description">Precision cutting tool</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(995 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$2,650</span>
+                            <span class="original-price">$3,732</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="48700" data-rating="4.5" data-popularity="555" data-date="2026-01-04">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Grader">
+                        <span class="new-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Caterpillar Motor Grader</h3>
+                        <p class="product-description">Professional grading machine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(555 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$48,700</span>
+                            <span class="original-price">$48,700</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="10400" data-rating="4" data-popularity="665" data-date="2026-01-15">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Pump">
+                        <span class="discount-badge">-19%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Subaru Water Pump</h3>
+                        <p class="product-description">Heavy-duty dewatering pump</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(665 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$10,400</span>
+                            <span class="original-price">$12,839</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="3950" data-rating="5" data-popularity="1275" data-date="2026-01-21">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Nailer">
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Paslode Pneumatic Nailer</h3>
+                        <p class="product-description">Coil nailer for framing</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(1275 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$3,950</span>
+                            <span class="original-price">$5,266</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="72500" data-rating="4" data-popularity="475" data-date="2025-12-27">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Dozer">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Komatsu Compact Dozer</h3>
+                        <p class="product-description">Small footprint bulldozer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(475 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$72,500</span>
+                            <span class="original-price">$81,460</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="11300" data-rating="4.5" data-popularity="1015" data-date="2026-01-20">
+                    <div class="product-image">
+                        <img src="img/logo-placeholder.png" alt="Heat">
+                        <span class="discount-badge">-2%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heater Industrial Heater</h3>
+                        <p class="product-description">Construction site heating</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(1015 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$11,300</span>
+                            <span class="original-price">$11,530</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn prev" id="prev-btn">← Previous</button>
+                <div id="page-numbers" class="page-numbers">
+                    <button class="page-btn active" data-page="1">1</button>
+                    <button class="page-btn" data-page="2">2</button>
+                    <button class="page-btn" data-page="3">3</button>
+                    <button class="page-btn" data-page="4">4</button>
+                </div>
+                <button class="page-btn next" id="next-btn">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Your trusted online destination for quality construction equipment and tools.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Construction Equipment Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
