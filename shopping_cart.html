@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - DOG Construction</title>
+
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <section id="header">
+        <img id="logo" src="img/Logo.png" alt="DOG Logo">
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li>
+                <a class="active cart-link" href="shopping_cart.html">
+                    <i class="fas fa-shopping-cart"></i><span class="cart-count" aria-label="Items in cart">0</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- CHECKOUT AREA -->
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+            <h1>Checkout</h1>
+            <p class="checkout-subtitle">
+                Review your order and complete your mock payment.
+            </p>
+
+
+            <!-- ORDER SUMMARY -->
+            <section class="checkout-box">
+
+    <h2>Order Summary</h2>
+
+    <!-- JavaScript will place all products here -->
+    <div id="cart-items">
+        <p>No products have been added.</p>
+    </div>
+
+    <div class="checkout-row checkout-total-row">
+        <span>Total Price</span>
+        <strong id="checkout-total">$0</strong>
+    </div>
+
+    <div class="cart-buttons">
+        <a href="products.html" class="continue-shopping-btn">
+            Add More Products
+        </a>
+
+        <button type="button" id="clear-cart-btn" class="clear-cart-btn">
+            Clear Cart
+        </button>
+    </div>
+
+</section>
+
+
+            <!-- PAYMENT FORM -->
+            <section class="checkout-box">
+
+                <h2>Payment Information</h2>
+
+                <form id="payment-form">
+
+                    <div class="checkout-form-group">
+                        <label for="payment-method">
+                            Select Payment Method
+                        </label>
+
+                        <select id="payment-method" required>
+                            <option value="">Choose a payment option</option>
+                            <option value="GCash">GCash</option>
+                            <option value="Maya">Maya</option>
+                            <option value="Credit/Debit Card">
+                                Credit/Debit Card
+                            </option>
+                            <option value="Cash on Delivery">
+                                Cash on Delivery
+                            </option>
+                        </select>
+                    </div>
+
+
+                    <div class="checkout-form-group">
+                        <label for="payment-amount">
+                            Enter Payment Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="payment-amount"
+                            placeholder="Enter amount"
+                            min="1"
+                            step="0.01"
+                            required
+                        >
+                    </div>
+
+
+                    <button type="submit" class="pay-now-btn">
+                        <i class="fas fa-lock"></i>
+                        Pay Now
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- SUCCESS MESSAGE -->
+            <section id="payment-success" class="payment-success">
+
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <h2>Payment Successful!</h2>
+
+                <p id="success-message">
+                    Your mock payment has been completed.
+                </p>
+
+                <a href="products.html" class="continue-shopping-btn">
+                    Continue Shopping
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

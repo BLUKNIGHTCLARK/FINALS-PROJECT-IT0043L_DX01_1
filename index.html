@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+    
+    <section id="header">
+        <img id="logo" src="./img/Logo.png" alt="DOG">
+    
+
+    <ul class="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="cart-link" href="shopping_cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count" aria-label="Items in cart">0</span></a></li>
+    </ul>
+</section>
+
+<section id="Value">
+    <h4>Trade-in Offer</h4>
+    <h2>Super Value Deals!</h2>
+    <h1>On All Products</h1>
+    <p>Save more with coupons & up to 80% off!</p>
+    <button class="cta-button">Shop Now</button>
+</section>
+
+<section id="feature">
+    <div class="Fe-box">
+        <i class="fas fa-truck"></i>
+        <h3>Free Shipping</h3>
+        <p>On orders over $50</p>
+    </div>
+    <div class="Fe-box">
+        <i class="fas fa-undo"></i>
+        <h3>Easy Returns</h3>
+        <p>30-day return policy</p>
+    </div>
+    <div class="Fe-box">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>Dedicated customer service</p>
+    </div>
+    <div class="Fe-box">
+        <i class="fas fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p>100% secure transactions</p>
+    </div>
+</section>
+
+<section id="products">
+    <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Discover our best-selling items</p>
+    </div>
+    <div class="products-grid" id="featured-products-grid" aria-live="polite"></div>
+    <div class="featured-products-action">
+        <a href="products.html" class="view-all-products">View All Products</a>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+
+        </div>
+        <div class="footer-section">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Your Store. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <div class="product-modal" id="product-modal" aria-hidden="true">
+        <div class="product-modal-backdrop" data-close-modal></div>
+        <section class="product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-product-name">
+            <button class="product-modal-close" type="button" aria-label="Close product details" data-close-modal>&times;</button>
+            <div class="product-modal-image">
+                <img id="modal-product-image" src="img/logo-placeholder.png" alt="">
+                <span id="modal-product-badge" class="modal-product-badge"></span>
+            </div>
+            <div class="product-modal-content">
+                <p id="modal-product-meta" class="modal-product-meta"></p>
+                <h2 id="modal-product-name"></h2>
+                <div id="modal-product-rating" class="rating"></div>
+                <p id="modal-product-description" class="modal-product-description"></p>
+                <div class="modal-price-row">
+                    <span id="modal-product-price" class="modal-product-price"></span>
+                    <span id="modal-product-original-price" class="modal-product-original-price"></span>
+                </div>
+                <div class="modal-purchase-row">
+                    <div class="modal-quantity" aria-label="Select quantity">
+                        <button id="modal-qty-minus" type="button" aria-label="Decrease quantity">&minus;</button>
+                        <input id="modal-quantity" type="number" min="1" max="99" value="1" aria-label="Product quantity">
+                        <button id="modal-qty-plus" type="button" aria-label="Increase quantity">+</button>
+                    </div>
+                    <button id="modal-add-to-cart" class="modal-add-to-cart" type="button">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                <p id="modal-cart-message" class="modal-cart-message" aria-live="polite"></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
